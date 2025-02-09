@@ -39,7 +39,7 @@ The application consists of the following components:
 - **Auto Scaling Group** to dynamically adjust instance count
 - **Elastic Load Balancer (ELB)** to distribute traffic
 
-### Workflow:
+### 🔄 Workflow:
 1. Create a Launch Template with the necessary configuration.
 2. Set up an Auto Scaling Group with scaling policies.
 3. Configure an Application Load Balancer and target groups.
@@ -47,7 +47,7 @@ The application consists of the following components:
 
 ---
 
-## Task 1: Creating an AMI for Auto Scaling
+## 📝 Task 1: Creating an AMI for Auto Scaling
 1. Navigate to the **Amazon EC2 Management Console**.
 2. Select **Instances** from the left panel.
 3. Locate and select **Web Server 1** (running state).
@@ -59,7 +59,7 @@ The application consists of the following components:
 
 ---
 
-## Task 2: Creating a Load Balancer
+## 📝 Task 2: Creating a Load Balancer
 1. Navigate to **Load Balancers** under the **EC2 Management Console**.
 2. Click **Create load balancer** > Select **Application Load Balancer**.
 3. Configure:
@@ -76,7 +76,7 @@ The application consists of the following components:
 
 ---
 
-## Task 3: Creating a Launch Template
+## 📝 Task 3: Creating a Launch Template
 1. Navigate to **Launch Templates** under **EC2**.
 2. Click **Create launch template**.
 3. Configure:
@@ -90,7 +90,7 @@ The application consists of the following components:
 
 ---
 
-## Task 4: Creating an Auto Scaling Group
+## 📝 Task 4: Creating an Auto Scaling Group
 1. Select `Bot-Ec2-Instance-template`, click **Actions > Create Auto Scaling Group**.
 2. Configure:
    - **Name**: `Lab Auto Scaling Group`
@@ -110,7 +110,7 @@ The application consists of the following components:
 
 ---
 
-## Task 5: Verifying Load Balancer Functionality
+## 📝 Task 5: Verifying Load Balancer Functionality
 1. Navigate to **EC2 Instances**.
 2. Ensure **two instances** named `Lab Instance` are running.
 3. Navigate to **Target Groups** and select `Bot-target-group`.
