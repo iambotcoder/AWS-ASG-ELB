@@ -26,16 +26,16 @@ This project is a simple demonstration of creating and running a scalable and lo
 Before you start, ensure you have the following:
 
 - **Lab VPC** configured for hosting the instances
-- **EC2 Instance with a Web Server**
+- **EC2 Instance** named as Web Server instance
 - **Web Server Security Group (SG)** allowing HTTP traffic to instances
 
 ---
 
 ## 🗺️ Architecture
+![AutoScaling Architecture](https://github.com/user-attachments/assets/eabe30d8-5bf7-43af-a8d6-efd4e074c28e)
 
 The application consists of the following components:
-
-- **Launch Template** to define instance configurations
+- **Ec2 Instance** To host Application.
 - **Auto Scaling Group** to dynamically adjust instance count
 - **Elastic Load Balancer (ELB)** to distribute traffic
 
